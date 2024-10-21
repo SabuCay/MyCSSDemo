@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #ff6b6b, #f0e130, #4f86f7);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+    color: #333;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+header {
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: center;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Knap med hover-effekt */
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    float: left;
+
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+
+}
+
+/* Loader animation */
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #4f86f7;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Parallax effekt */
+.parallax {
+    background-image: url('https://www.example.com/your-image.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Responsivt layout med flexbox */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Glødende tekst */
+.glow-text {
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 0 0 10px #4CAF50, 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+}
+
+/* Scroll-to-top knap */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top.show {
+    display: block;
+    opacity: 1;
+}
+
+/* Animation for baggrund */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+/* Tekstfarveskift med animation */
+@keyframes colorChange {
+    0% { color: #ff6b6b; }
+    25% { color: #f0e130; }
+    50% { color: #4f86f7; }
+    75% { color: #4CAF50; }
+    100% { color: #ff6b6b; }
+}
+
+.color-changing-text {
+    font-size: 2em;
+    animation: colorChange 4s infinite;
+}
+/* Inputfelt med fokus-effekt */
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    transition: border-color 0.3s ease;
+    float: left;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
