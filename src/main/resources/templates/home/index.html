@@ -1,53 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="MyCSS.css"/>
-
+    <title>CSS Demo – 2. semester</title>
+    <link rel="stylesheet" href="MyCSS.css">
 </head>
 <body>
-<header>
-    <h1 class="glow-text">CSS Effekter Demo</h1>
-    <p>Her demonstreres nogle fede CSS effekter.</p>
+
+<!-- HEADER / HERO -->
+<header class="hero">
+    <h1>✨ CSS Effekter Demo</h1>
+    <p>En samling af moderne CSS-teknikker</p>
 </header>
 
-<section class="container">
-    <div class="card">
-        <h2>Kort med skygge</h2>
-        <p>Dette kort har en flot skygge og hover-effekt.</p>
-    </div>
-    <div class="card">
-        <h2>Parallax Effekt</h2>
-        <p>Scroll ned for at se baggrundens parallax-effekt.</p>
-    </div>
-    <div class="card">
-        <h2>Knap med hover-effekt</h2>
-        <button style="background-color: blue">Hold over mig</button>
+<!-- GRID SEKTION -->
+<section class="grid-section">
+    <h2>Layout med CSS Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
     </div>
 </section>
 
-<div class="parallax"></div>
+<!-- PSEUDO-ELEMENTER -->
+<section class="pseudo-section">
+    <h2 class="decorated-title">Pseudo-elementer</h2>
+    <p>CSS kan tilføje pynt og grafiske elementer <strong>uden ekstra HTML</strong>.</p>
+</section>
 
-<section class="container">
-    <div class="card">
-        <h2>Input sjov</h2>
-        <input type="text" name="fname">
-        <input type="text" name="lname">
-        <input type="submit" value="Send">
+<!-- ANIMATION -->
+<section class="animation-section">
+    <h2>Animationer med Keyframes</h2>
+    <button class="bounce-button">Spring!</button>
+</section>
 
-    </div>
-
-    <div class="card">
-        <h2>Glødende tekst</h2>
-        <p class="glow-text">CSS kan få tekst til at lyse!</p>
+<!-- GLASSMORPHISM -->
+<section class="glass-section">
+    <h2>Glassmorphism UI</h2>
+    <div class="glass-card card-3d">
+        <p>Moderne brugerflade med gennemsigtighed og blur – helt uden billeder!</p>
     </div>
 </section>
 
+<!-- FORM STYLING -->
+<section class="form-demo">
+    <h2>Form-elementer med CSS</h2>
+    <form>
+        <label><input type="checkbox"> Accepter betingelser</label><br><br>
+
+        <label>Vælg farve:
+            <select>
+                <option>Blå</option>
+                <option>Grøn</option>
+                <option>Rød</option>
+            </select>
+        </label>
+    </form>
+</section>
+
+<!-- BADGE OG POSITIONERING -->
+<section class="position-demo">
+    <h2>Positionering og z-index</h2>
+    <div class="relative-box">
+        <div class="badge">NYHED</div>
+        <p>Denne badge er placeret med <code>position: absolute</code> og ligger ovenpå boksen med <code>z-index</code>.</p>
+    </div>
+</section>
+
+<!-- BILLEDE I MIDTEN -->
+<section class="billed-container">
+    <h2>Centreret billede</h2>
+    <img src="Blinke-emoji.jpg" alt="Demo-billede">
+</section>
+
+<!-- FOOTER -->
 <footer>
-    <a href="#" class="scroll-to-top">↑ Til toppen</a>
+    <p>Lavet med ❤️ til 2. semester datamatikere</p>
 </footer>
-
 
 </body>
 </html>
